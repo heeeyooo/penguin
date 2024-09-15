@@ -1,0 +1,84 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  min-height: 100vh;
+  text-align: center;
+  color: var(--color);
+}
+
+.main-info-about-me {
+  font-size: clamp(30px, 6vw, 70px);
+  font-weight: 700;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.main-info-about-me span {
+  opacity: 0;
+}
+
+.active-lol {
+  opacity: 0;
+  animation: charReveal 0.5s forwards;
+}
+
+@keyframes charReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.info-about-me {
+  font-size: clamp(10px, 1.5vw, 18px);
+  opacity: 0;
+  margin: 0;
+  padding: 0 25px;
+  transform: translateY(50px);
+  animation: translateEffect 0.6s 8.1s forwards;
+}
+
+@keyframes translateEffect {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-btn-container {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: revealBtn 0.3s 8.4s forwards;
+}
+
+@keyframes revealBtn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  color: var(--color);
+  background: var(--glass-background);
+  border-radius: 20px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.about-btn:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}

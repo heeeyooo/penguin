@@ -1,0 +1,76 @@
+.loading-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-name-logo {
+  font-size: clamp(36px, 6vw, 72px);
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: changeNameLogo 0.5s 2s forwards ease;
+  user-select: none;
+  height: 80px;
+  margin: 0;
+}
+
+@keyframes changeNameLogo {
+  to {
+    height: 0;
+  }
+}
+
+.loading-img-logo-container {
+  position: fixed;
+  display: inline;
+  overflow: hidden;
+  width: clamp(150px, 20vw, 200px);
+  animation: changeImgLogo 0.5s 2.5s forwards;
+  height: 0;
+}
+
+@keyframes changeImgLogo {
+  to {
+    height: clamp(150px, 20vw, 200px);
+  }
+}
+
+.loading-img-logo {
+  width: clamp(150px, 20vw, 200px);
+}
+
+.loading-percent-container {
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+}
+
+.loading-percent {
+  color: var(--color);
+}
+
+.percent-range-background {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 6px;
+  border-radius: 4px;
+  width: clamp(200px, 20vw, 300px);
+  background-color: var(--glass-background);
+  outline: 2px solid var(--glass-background);
+  outline-offset: 5px;
+}
+
+.percent-range {
+  width: 0%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--color);
+}
