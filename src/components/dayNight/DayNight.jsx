@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import logoWhite from "./../../logo_img/Logo-white.svg";
+import logoWhite from "./../../logo_img/penguin-white.png";
 import "./DayNight.css";
 
 function DayNight() {

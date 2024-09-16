@@ -59,19 +59,12 @@ function About() {
         <br />
         viewer with their transitions and ease of use. Currently looking for
         <br />a job and learning by myself. Gym enjoyer
-        {/* I like to integrate new interesting ideas for websites and applications
-        I'm always excited to learn something new
-        In my free time I work out at the gym */}
       </p>
       <div className="about-btn-container">
         <a className="about-btn" href="#section4">
           Contact me
         </a>
       </div>
-
-      {/* <a className="show-more-btn" href="#section2">
-        Show more
-      </a> */}
     </div>
   );
 }

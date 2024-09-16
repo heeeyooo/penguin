@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import loadingLogo from "./../../logo_img/Logo-black.svg";
+import loadingLogo from "./../../logo_img/penguin-black.png";
 import "./Loading.css";
 
 function Loading() {
@@ -28,11 +28,11 @@ function Loading() {
       document.body.style.overflowY = "visible";
       document.querySelector(".loading-container").style.display = "none";
     }, 4000);
-  });
+  }, []);
 
   return (
     <div className="loading-container">
-      <p className="loading-name-logo">heeeyooo</p>
+      <p className="loading-name-logo">penguin</p>
       <div className="loading-img-logo-container">
         <img
           className="loading-img-logo js-logo"

@@ -83,8 +83,7 @@ function Header() {
     <header className="header">
       <div className="logo-btn-container">
         <a href="#section1" className="header-logo">
-          {/* <img className="header-logo js-logo" src={logo} alt="heeeyooo" /> */}
-          heeeyooo
+          penguin
         </a>
         <BurgerBtn />
       </div>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import logoBlack from "./../../logo_img/Logo-black.svg";
-import logoWhite from "./../../logo_img/Logo-white.svg";
+import logoBlack from "./../../logo_img/penguin-black.png";
+import logoWhite from "./../../logo_img/penguin-white.png";
 import "./Footer.css";
 
 function Footer() {
@@ -16,10 +16,6 @@ function Footer() {
       }
     }, 2000);
   }, []);
-
-  // function forceChangeBack(props) {
-  //   document.body.className = props;
-  // }
 
   const BLACK = {
     color: "#000",
@@ -701,7 +697,6 @@ function Footer() {
             <button className="picker-btn btn23">23</button>
           </div>
         </div>
-        {/* <div className="info-input2">Color</div> */}
         <div className="container2">
           <div className="picker-glass"></div>
           <div
@@ -766,7 +761,10 @@ function Footer() {
         </a>
       </div>
       <p className="copyright">
-        © heeeyooo {new Date().getFullYear()} | Stepan Dordiai
+        © penguin 2024 | Made with love by{" "}
+        <a className="creator" href="https://stepandordiai.netlify.app/">
+          Stepan Dordiai
+        </a>
       </p>
     </footer>
   );
