@@ -1,68 +1,68 @@
 /* BURGER BTN */
 
 .burger-button {
-  width: 40px;
-  height: 0;
-  cursor: pointer;
-  padding: 20px 0;
-  display: none;
+    width: 40px;
+    height: 0;
+    cursor: pointer;
+    padding: 20px 0;
+    display: none;
 }
 
 .burger-button::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  border-radius: 1px;
-  background-color: var(--color);
-  transform: translateY(-5px);
-  transition: all 0.3s;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: var(--color);
+    transform: translateY(-5px);
+    transition: all 0.3s;
 }
 
 .burger-button::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  border-radius: 1px;
-  background-color: var(--color);
-  transform: translateY(5px);
-  transition: all 0.3s;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: var(--color);
+    transform: translateY(5px);
+    transition: all 0.3s;
 }
 
 /* ACTIVE BURGER BTN */
 
 .active-burger-button::before {
-  transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
 }
 
 .active-burger-button::after {
-  transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
 }
 
 .active-header {
-  min-height: 75vh;
-  background: var(--glass-background);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+    min-height: 75vh !important;
+    background: var(--glass-background) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
 }
 
 .active-header-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
 }
 
 .active-header-nav a {
-  font-size: 30px;
+    font-size: 30px !important;
 }
 
 .active-header-socials {
-  display: flex;
+    display: flex !important;
 }
 
 @media screen and (max-width: 900px) {
-  .burger-button {
-    display: block;
-  }
+    .burger-button {
+        display: block;
+    }
 }
