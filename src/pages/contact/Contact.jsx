@@ -15,7 +15,7 @@ function Contact() {
 
     function resetForm() {
         let inp = document.getElementById("email");
-        inp.style.background = "var(--main-background)";
+        inp.style.background = "var(--glass-background)";
     }
 
     addEventListener("scroll", () => {

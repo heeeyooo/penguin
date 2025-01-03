@@ -1,8 +1,3 @@
-import img4 from "./img/gym-site.jpg";
-import img2 from "./img/gallery.png";
-import img3 from "./img/cloud.png";
-import img1 from "./img/yagoda-karpat.png";
-import img5 from "./img/template.jpg";
 import "./Project.css";
 
 function Project() {
@@ -12,7 +7,6 @@ function Project() {
             link: "#",
             gitHubLink: "#",
             title: "01",
-            img: img1,
             skills: [
                 <i className="fa-brands fa-html5"></i>,
                 <i className="fa-brands fa-css3-alt"></i>,
@@ -26,7 +20,6 @@ function Project() {
             link: "#",
             gitHubLink: "#",
             title: "02",
-            img: img2,
             skills: [
                 <i className="fa-brands fa-html5"></i>,
                 <i className="fa-brands fa-css3-alt"></i>,
@@ -41,7 +34,6 @@ function Project() {
             link: "#",
             gitHubLink: "#",
             title: "03",
-            img: img3,
             skills: [
                 <i className="fa-brands fa-html5"></i>,
                 <i className="fa-brands fa-css3-alt"></i>,
@@ -55,7 +47,6 @@ function Project() {
             link: "#",
             gitHubLink: "#",
             title: "04",
-            img: img4,
             skills: [
                 <i className="fa-brands fa-html5"></i>,
                 <i className="fa-brands fa-css3-alt"></i>,
@@ -69,7 +60,6 @@ function Project() {
             link: "#",
             gitHubLink: "#",
             title: "05",
-            img: img5,
             skills: [
                 <i className="fa-brands fa-html5"></i>,
                 <i className="fa-brands fa-css3-alt"></i>,
@@ -85,11 +75,6 @@ function Project() {
             {DATA.map((el) => {
                 return (
                     <div className={el.class} key={el.id}>
-                        <img
-                            className={el.classImg}
-                            src={el.img}
-                            alt={el.altImg}
-                        />
                         <div className="project-content-container">
                             <h4 className="project-name">{el.title}</h4>
                             <p className="project-info"></p>
@@ -102,7 +87,7 @@ function Project() {
                                 </a>
                             </div>
                             <div className="project-skills">
-                                {el.skills.forEach((skill, index) => {
+                                {el.skills.map((skill, index) => {
                                     return <div key={index}>{skill}</div>;
                                 })}
                             </div>

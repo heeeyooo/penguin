@@ -1,5 +1,6 @@
-import "./Header.css";
 import BurgerBtn from "./../burgerBtn/BurgerBtn";
+import cv from "./../../pdf/stepan-dordiai-cv-v2.2.1.pdf";
+import "./Header.css";
 
 function Header() {
     addEventListener("scroll", () => {
@@ -127,32 +128,53 @@ function Header() {
                 </li>
                 <li>
                     <div className="resume-container">
-                        <a className="header-link-resume" href="">
+                        <a className="header-link-resume" href={cv}>
                             Resume
                         </a>
-                        <a className="header-link-resume-download" href="">
+                        <a
+                            className="header-link-resume-download"
+                            href={cv}
+                            download={true}
+                        >
                             <i className="fa-solid fa-download"></i>
                         </a>
                     </div>
                 </li>
             </ul>
             <div className="header-socials">
-                <a className="social-github" href="" target="_blank">
+                <a
+                    className="social-github"
+                    href="https://github.com/heeeyooo"
+                    target="_blank"
+                >
                     <i className="fa-brands fa-github"></i>
                 </a>
-                <a className="social-instagram" href="" target="_blank">
+                <a
+                    className="social-instagram"
+                    href="https://www.instagram.com/heeeyooo_/"
+                    target="_blank"
+                >
                     <i className="fa-brands fa-instagram"></i>
                 </a>
-                <a className="social-facebook" href="" target="_blank">
-                    <i className="fa-brands fa-facebook"></i>
-                </a>
-                <a className="social-twitter" href="" target="_blank">
+                <a
+                    className="social-twitter"
+                    href="https://x.com/Heeeyooo_"
+                    target="_blank"
+                >
                     <i className="fa-brands fa-x-twitter"></i>
                 </a>
-                <a className="social-twitch" href="" target="_blank">
+                <a
+                    className="social-twitch"
+                    href="https://www.twitch.tv/heeeyooo_"
+                    target="_blank"
+                >
                     <i className="fa-brands fa-twitch"></i>
                 </a>
-                <a className="social-linkedin" href="" target="_blank">
+                <a
+                    className="social-linkedin"
+                    href="https://www.linkedin.com/in/stepan-dordiai"
+                    target="_blank"
+                >
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
             </div>
